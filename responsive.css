@@ -1,0 +1,118 @@
+/* Default mobile styles */
+@media only screen and (max-width: 768px) {
+    /* Skills section */
+    .main-two-skills {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .first-sec {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-sec {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Ensure space between logo and menu */
+        align-items: center;
+        height: auto;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    /* Hamburger menu (assuming it's the last child of navbar) */
+    .navbar:last-child {
+       
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .navlinks {
+        font-size: 1.2rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-left: 0;
+        display: none;
+    }
+
+    /* Main section: image first, then info box */
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: #e0f2f1;
+    }
+
+    .myimage {
+        order: 1;
+        justify-content: center;
+        background-size: cover;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .info-contacts {
+        order: 3;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Social icons in a row */
+    .socials {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        order: 2;
+    }
+
+    .socials i {
+        font-size: 2rem;
+    }
+
+    /* Adjust evidence section */
+    .my-evidence {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .proof {
+        margin: 1rem 0;
+    }
+
+    .my-evidence hr {
+        display: none;
+    }
+
+    /* Footer styles */
+    footer {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-socials {
+        margin-top: 1rem;
+    }
+
+    .footer-socials i {
+        font-size: 2rem;
+    }
+}

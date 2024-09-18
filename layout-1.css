@@ -1,0 +1,113 @@
+
+/* Skills section */
+.main-two-skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    background-color: #f5f5f5;
+}
+
+.first-sec {
+    width: 50%;
+}
+
+.skills {
+    font-size: 2rem;
+    color: #00796b;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reason {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: #333;
+}
+
+.answer {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #666;
+}
+
+.hireme-again {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff7043;
+    color: white;
+    border-radius: 50px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hireme-again:hover {
+    background-color: #e64a19;
+}
+
+/* Detailed skills column styling */
+.second-sec {
+    display: flex;
+    gap: 3rem;
+}
+
+.first-col, .second-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.visual-design, .ux-research, .responsive-design {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.visual-design:hover,.ux-research:hover,.responsive-design:hover {
+    scale: 1.1;
+    transition: 0.6s;
+}
+
+.visual-design i, .ux-research i, .responsive-design i {
+    font-size: 2.5rem;
+    color: #00796b;
+}
+
+.visual-design h3, .ux-research h3, .responsive-design h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.visual-design p, .ux-research p, .responsive-design p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.footer-socials i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-socials i:hover {
+    color: #ff7043;
+}

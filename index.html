@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexa - Web Designer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout-1.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Alexa</div>
+        <ul class="navlinks">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <i class="fas fa-bars hamburger"></i>
+    </div>
+  
+
+    <!-- Main Section -->
+    <div class="main">
+        <div class="socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+        <div class="info-contacts">
+            <p class="intro">
+                Hi, I'M Alexa
+            </p>
+            <p class="role">A Web Designer</p>
+            <p class="about">"I am a passionate web designer specializing in creating clean, responsive, and visually compelling websites."</p>
+            <div class="buttons">
+                <div class="conct">Contact
+                    <i class="fa-solid fa-angles-right"></i>
+                </div>
+                <div class="hire">Hire me
+                    <i class="fa-solid fa-location-arrow"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="myimage">
+            <img src="img.png" alt="My Image">
+        </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <div class="my-evidence">
+        <div class="proof">
+            <p class="first">80+</p>
+            <p class="second">Satisfied Clients</p>
+        </div>
+        <hr class="vertical-hr">
+        <div class="proof">
+            <p class="first">200+</p>
+            <p class="second">Projects</p>
+        </div>
+        <hr class="vertical-hr">
+        <div class="proof">
+            <p class="first">99+</p>
+            <p class="second">Reviews</p>
+        </div>
+        <hr class="vertical-hr">
+    </div>
+
+    <!-- Skills Section -->
+    <div class="main-two-skills">
+        <div class="first-sec">
+            <div class="skills">
+                <i class="fa-solid fa-palette"></i> My Skills
+            </div>
+            <div class="reason">
+                Why Should You Hire Me For Your Project?
+            </div>
+            <div class="answer">
+                My designs are fully responsive and optimized for all devices, ensuring a seamless experience across platforms.
+            </div>
+            <div class="hireme-again">
+                Hire me <i class="fa-solid fa-location-arrow"></i>
+            </div>
+        </div>
+
+        <!-- Detailed Skills Section -->
+        <div class="second-sec">
+            <div class="first-col">
+                <div class="visual-design">
+                    <i class="fa-solid fa-paint-brush"></i>
+                    <h3>Visual Design</h3>
+                    <p>Crafting aesthetically pleasing and effective designs that communicate your brand's identity.</p>
+                </div>
+                <div class="ux-research">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h3>UX Research</h3>
+                    <p>Conducting thorough research to ensure user needs are met, leading to better user experiences.</p>
+                </div>
+            </div>
+            <div class="second-col">
+                <div class="responsive-design">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Designing websites that adapt beautifully to any screen size, from mobile to desktop.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Alexa. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.querySelector('.hamburger');
+        const navlinks = document.querySelector('.navlinks');
+    
+        // Toggle navlinks and hamburger icon class
+        hamburger.addEventListener('click', () => {
+            if (window.innerWidth <= 768) { // Check if in mobile view
+                navlinks.classList.toggle('active');
+                hamburger.classList.toggle('cross'); // Switch between bars and cross
+            }
+        });
+
+        // Optional: Close navlinks if clicked outside (if needed)
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navlinks.contains(e.target)) {
+                navlinks.classList.remove('active');
+                hamburger.classList.remove('cross');
+            }
+        });
+    });
+
+    </script>
+    
+</body>
+
+</html>
